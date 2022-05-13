@@ -16,7 +16,7 @@ rdfdiff data/rdf/input.ttl data/rdf/sparqled.ttl TTL TTL > data/rdf/sparqled-dif
 #pygmentize -g data/rdf/sparqled.ttl
 riot --output=rdfxml data/rdf/input.ttl > data/rdf/input.rdf
 #pygmentize -g data/rdf/input.rdf
-xslt3 -xsl:rdf-to-sparql.xsl -s:data/rdf/input.rdf -o:data/xml/sparql-result.xml -t
+xslt3 -xsl:../common/rdf-to-sparql.xsl -s:data/rdf/input.rdf -o:data/xml/sparql-result.xml -t
 #pygmentize -g data/xml/sparql-result.xml
 xslt3 -xsl:$SPEC/$SCHEMA/lowering.xslt -s:data/xml/sparql-result.xml -o:data/xml/lowered.xml -t
 #pygmentize -g data/xml/lowered.xml
