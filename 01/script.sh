@@ -37,7 +37,8 @@ xslt3 -xsl:$SPEC/$SCHEMA/lifting.xslt -s:data/xml/lowered.xml -o:data/rdf/lifted
 #pygmentize -g data/rdf/lifted.rdf
 
 echo -------------RDF/XML to Turtle-------------
-riot --formatted=turtle data/rdf/lifted.rdf > data/rdf/lifted.ttl 2> data/rdf/lifted-validation.txt
+#save output without timestamp so that we can compare it
+riot --formatted=turtle data/rdf/lifted.rdf 2>&1 >data/rdf/lifted.ttl | cut -d" " -f2- > data/rdf/lifted-validation.txt
 
 echo -------------Lifted DIFF-------------------
 rdfdiff data/rdf/input.ttl data/rdf/lifted.ttl TTL TTL > data/rdf/diff-lifted.txt
