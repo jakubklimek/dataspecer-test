@@ -8,5 +8,6 @@
     tc:má-dostupný-jazyk <http://publications.europa.eu/resource/authority/language/CES> ;
     tc:kapacita <1/kapacita> .
 
-<1/kapacita> množství:hodnota 20 ;
+<1/kapacita> a množství:množství ;
+    množství:hodnota 20 ;
     množství:má-jednotku <http://jednotka.cz> .
