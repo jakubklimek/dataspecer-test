@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sparql xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2005/sparql-results#">
+   <head>
+      <variable name="s"/>
+      <variable name="p"/>
+      <variable name="o"/>
+   </head>
+   <results>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/datový/turistické-cíle/pojem/kapacita</uri>
+         </binding>
+         <binding name="o">
+            <uri>http://localhost/tc/1/kapacita</uri>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/datový/turistické-cíle/pojem/má-dostupný-jazyk</uri>
+         </binding>
+         <binding name="o">
+            <uri>http://publications.europa.eu/resource/authority/language/CES</uri>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/datový/turistické-cíle/pojem/veřejná-přístupnost</uri>
+         </binding>
+         <binding name="o">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#boolean">false</literal>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/datový/turistické-cíle/pojem/kouření-povoleno</uri>
+         </binding>
+         <binding name="o">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#boolean">true</literal>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1</uri>
+         </binding>
+         <binding name="p">
+            <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+         </binding>
+         <binding name="o">
+            <uri>https://slovník.gov.cz/datový/turistické-cíle/pojem/turistický-cíl</uri>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1/kapacita</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/generický/množství/pojem/má-jednotku</uri>
+         </binding>
+         <binding name="o">
+            <uri>http://jednotka.cz</uri>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1/kapacita</uri>
+         </binding>
+         <binding name="p">
+            <uri>https://slovník.gov.cz/generický/množství/pojem/hodnota</uri>
+         </binding>
+         <binding name="o">
+            <literal datatype="http://www.w3.org/2001/XMLSchema#integer">20</literal>
+         </binding>
+      </result>
+      <result>
+         <binding name="s">
+            <uri>http://localhost/tc/1/kapacita</uri>
+         </binding>
+         <binding name="p">
+            <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+         </binding>
+         <binding name="o">
+            <uri>https://slovník.gov.cz/generický/množství/pojem/množství</uri>
+         </binding>
+      </result>
+   </results>
+</sparql>

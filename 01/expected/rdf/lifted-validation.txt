@@ -1,0 +1,2 @@
+07:07:38 WARN  riot            :: [line: 2, col: 192] {W124} Non-ascii characters in a namespace URI may not be completely portable: <https://slovn?k.gov.cz/datov?/turistick?-c?le/pojem/>. Resulting RDF URI references are legal.
+07:07:38 WARN  riot            :: [line: 2, col: 192] {W124} Non-ascii characters in a namespace URI may not be completely portable: <https://slovn?k.gov.cz/generick?/mno?stv?/pojem/>. Resulting RDF URI references are legal.

@@ -1,0 +1,13 @@
+@base <http://localhost/tc/> .
+@prefix tc: <https://slovník.gov.cz/datový/turistické-cíle/pojem/> .
+@prefix množství: <https://slovník.gov.cz/generický/množství/pojem/> .
+
+<1> a tc:turistický-cíl ;
+    tc:kouření-povoleno true ;
+    tc:veřejná-přístupnost false ;
+    tc:má-dostupný-jazyk <http://publications.europa.eu/resource/authority/language/CES> ;
+    tc:kapacita <1/kapacita> .
+
+<1/kapacita> a množství:množství ;
+    množství:hodnota 20 ;
+    množství:má-jednotku <http://jednotka.cz> .

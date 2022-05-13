@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tourist_destination xmlns:sp="http://www.w3.org/2005/sparql-results#">
+   <iri>http://localhost/tc/1</iri>
+   <kouření_povoleno>true</kouření_povoleno>
+   <veřejná_přístupnost>false</veřejná_přístupnost>
+   <má_dostupný_jazyk>http://publications.europa.eu/resource/authority/language/CES</má_dostupný_jazyk>
+   <kapacita>
+      <iri>http://localhost/tc/1/kapacita</iri>
+      <hodnota>20</hodnota>
+      <má_jednotku>
+         <iri>http://jednotka.cz</iri>
+      </má_jednotku>
+   </kapacita>
+</tourist_destination>

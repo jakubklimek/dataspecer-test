@@ -1,0 +1,23 @@
+@prefix množství: <https://slovník.gov.cz/generický/množství/pojem/> .
+@prefix ns0:      <https://slovník.gov.cz/datový/turistické-cíle/pojem/> .
+@prefix ns1:      <https://slovník.gov.cz/datový/jazyky/pojem/> .
+@prefix ns2:      <https://slovník.gov.cz/generický/množství/pojem/> .
+@prefix ns3:      <https://slovník.gov.cz/generický/číselníky/pojem/> .
+@prefix tc:       <https://slovník.gov.cz/datový/turistické-cíle/pojem/> .
+
+<http://jednotka.cz>  a  ns3:jednotka .
+
+<http://localhost/tc/1/kapacita>
+        a                ns2:množství ;
+        ns2:hodnota      20 ;
+        ns2:má-jednotku  <http://jednotka.cz> .
+
+<http://localhost/tc/1>
+        a                       tc:turistický-cíl ;
+        tc:kapacita             <http://localhost/tc/1/kapacita> ;
+        tc:kouření-povoleno     true ;
+        tc:má-dostupný-jazyk    <http://publications.europa.eu/resource/authority/language/CES> ;
+        tc:veřejná-přístupnost  false .
+
+<http://publications.europa.eu/resource/authority/language/CES>
+        a       ns1:jazyk .

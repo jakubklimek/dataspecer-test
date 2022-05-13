@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:ns0="https://slovník.gov.cz/datový/turistické-cíle/pojem/" xmlns:ns1="https://slovník.gov.cz/generický/množství/pojem/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://localhost/tc/1">
+      <rdf:type rdf:resource="https://slovník.gov.cz/datový/turistické-cíle/pojem/turistický-cíl"/>
+      <ns0:kouření-povoleno rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:kouření-povoleno>
+      <ns0:veřejná-přístupnost rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:veřejná-přístupnost>
+      <ns0:má-dostupný-jazyk>
+         <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/language/CES"/>
+      </ns0:má-dostupný-jazyk>
+      <ns0:kapacita>
+         <rdf:Description rdf:about="http://localhost/tc/1/kapacita">
+            <rdf:type rdf:resource="https://slovník.gov.cz/generický/množství/pojem/množství"/>
+            <ns1:hodnota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns1:hodnota>
+            <ns1:má-jednotku>
+               <rdf:Description rdf:about="http://jednotka.cz">
+                  <rdf:type rdf:resource="https://slovník.gov.cz/generický/číselníky/pojem/jednotka"/>
+               </rdf:Description>
+            </ns1:má-jednotku>
+         </rdf:Description>
+      </ns0:kapacita>
+   </rdf:Description>
+</rdf:RDF>

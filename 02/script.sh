@@ -6,7 +6,10 @@ dataspecer generate $URL
 mkdir data 2>/dev/null
 mkdir data/rdf 2>/dev/null
 mkdir data/xml 2>/dev/null
+mkdir data/json 2>/dev/null
+mkdir data/csv 2>/dev/null
 cp input.ttl data/rdf
+#cp input.csv data/csv
 #pygmentize -g data/rdf/input.ttl
 echo -------------SPARQL CONSTRUCT--------------
 sparql --data=data/rdf/input.ttl --query=$SPEC/$SCHEMA/query.sparql --results=turtle > data/rdf/sparqled.ttl
@@ -42,3 +45,7 @@ riot --formatted=turtle data/rdf/lifted.rdf > data/rdf/lifted.ttl 2> data/rdf/li
 echo -------------Lifted DIFF-------------------
 rdfdiff data/rdf/input.ttl data/rdf/lifted.ttl TTL TTL > data/rdf/diff-lifted.txt
 cat data/rdf/diff-lifted.txt
+
+#echo -------------CSV-------------------
+#rdf validate --format tabular --metadata $SPEC/$SCHEMA/schema.csv-metadata.json data/csv/input.csv > data/csv/validation.txt 2>&1
+#rdf serialize --format tabular --minimal --decode-uri --output-format turtle --metadata $SPEC/$SCHEMA/schema.csv-metadata.json -o data/rdf/csv.ttl data/csv/input.csv

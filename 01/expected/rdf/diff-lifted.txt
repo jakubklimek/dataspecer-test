@@ -1,0 +1,5 @@
+models are unequal
+
+< 8 triples
+> 9 triples
+> [http://jednotka.cz, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, https://slovn?k.gov.cz/generick?/??seln?ky/pojem/jednotka]

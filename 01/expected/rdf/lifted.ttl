@@ -1,0 +1,17 @@
+@prefix ns0: <https://slovník.gov.cz/datový/turistické-cíle/pojem/> .
+@prefix ns1: <https://slovník.gov.cz/generický/množství/pojem/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://jednotka.cz>  rdf:type  <https://slovník.gov.cz/generický/číselníky/pojem/jednotka> .
+
+<http://localhost/tc/1/kapacita>
+        rdf:type         ns1:množství ;
+        ns1:hodnota      20 ;
+        ns1:má-jednotku  <http://jednotka.cz> .
+
+<http://localhost/tc/1>
+        rdf:type                 ns0:turistický-cíl ;
+        ns0:kapacita             <http://localhost/tc/1/kapacita> ;
+        ns0:kouření-povoleno     true ;
+        ns0:má-dostupný-jazyk    <http://publications.europa.eu/resource/authority/language/CES> ;
+        ns0:veřejná-přístupnost  false .

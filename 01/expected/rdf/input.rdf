@@ -1,0 +1,17 @@
+<rdf:RDF
+    xmlns:množství="https://slovník.gov.cz/generický/množství/pojem/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:tc="https://slovník.gov.cz/datový/turistické-cíle/pojem/" > 
+  <rdf:Description rdf:about="http://localhost/tc/1">
+    <tc:kapacita rdf:resource="http://localhost/tc/1/kapacita"/>
+    <tc:má-dostupný-jazyk rdf:resource="http://publications.europa.eu/resource/authority/language/CES"/>
+    <tc:veřejná-přístupnost rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</tc:veřejná-přístupnost>
+    <tc:kouření-povoleno rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tc:kouření-povoleno>
+    <rdf:type rdf:resource="https://slovník.gov.cz/datový/turistické-cíle/pojem/turistický-cíl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/tc/1/kapacita">
+    <množství:má-jednotku rdf:resource="http://jednotka.cz"/>
+    <množství:hodnota rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</množství:hodnota>
+    <rdf:type rdf:resource="https://slovník.gov.cz/generický/množství/pojem/množství"/>
+  </rdf:Description>
+</rdf:RDF>
